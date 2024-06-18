@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BinaryNexus Technologies</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+    <div class="bg-ctr">
+        <img src="assets/simple-black-bg.jpg" alt="Black Background" class="simple-bg">
+    </div>
+    <!-- ========== Navigation Bar for Desktop ========== -->
+    <nav class="desktop-nav">
+        <p class="logo">BinaryNexus Technologies</p>
+        <ul class="nav-links desktop-nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- ========== Navigation Bar for Mobile ========== -->
+    <nav class="mobile-nav">
+        <p class="logo">BinaryNexus Technologies</p>
+        <div class="mobile-menu">
+            <div class="mobile-menu-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links mobile-nav-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- ========== Main Section ========== -->
+    <section class="main">
+        <div class="section-content main-content">
+            <h1 class="main-title">We are tidying up!</h1>
+            <p class="main-text-1">Currently updating servers to improve service.</p>
+            <p class="main-text-2">Thank you for your patience!</p>
+            <button class="main-cta">Read More</button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
