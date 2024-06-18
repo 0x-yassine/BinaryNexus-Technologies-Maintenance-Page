@@ -9,13 +9,16 @@
 }
 
 @media screen and (max-width: 600px) {
-    .main {
-        .main-title {
-            font-size: 3.5rem;
-        }
+    .main-title {
+        font-size: 3.5rem;
+    }
 
-        .main-text-1, .main-text-2 {
-            font-size: 1.25rem;
-        }
+    .main-text-1,
+    .main-text-2 {
+        font-size: 1.25rem;
+    }
+
+    .main {
+        height: 100vh;
     }
 }
