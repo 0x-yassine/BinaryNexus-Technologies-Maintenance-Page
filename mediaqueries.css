@@ -32,4 +32,11 @@
     .logo {
         font-size: 1.5rem;
     }
+
+    nav {
+        height: 16vh;
+        align-items: center;
+        padding: 0 40px;
+        justify-content: space-between;
+    }
 }
