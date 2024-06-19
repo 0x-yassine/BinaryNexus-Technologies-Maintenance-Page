@@ -273,6 +273,12 @@ a:hover {
     cursor: pointer;
 }
 
-.about-title, .about-text, .about-cta {
+.about-title,
+.about-text,
+.about-cta {
     color: var(--color-black);
+}
+
+.mobile-about-text {
+    display: none;
 }
