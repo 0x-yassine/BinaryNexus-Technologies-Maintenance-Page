@@ -49,11 +49,11 @@
     .about-content {
         width: fit-content;
         height: fit-content;
-        padding: 0;
+        padding: auto;
     }
 
     .about-img-ctr {
-        margin-right: 10px;
+        margin-right: 15px;
     }
 }
 
