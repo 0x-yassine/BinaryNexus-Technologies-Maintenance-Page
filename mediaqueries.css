@@ -149,3 +149,32 @@
         height: 50px;
     }
 }
+
+/* SERVICES SECTION */
+
+@media screen and (max-width: 1400px) {
+    .services-containers {
+        flex-wrap: wrap;
+        margin-bottom: 160px;
+    }
+
+    .services {
+        height: fit-content;
+    }
+
+    .services-title {
+        margin-top: 160px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .services-containers {
+        padding: 0 40px 0 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .services-containers {
+        padding: 0;
+    }
+}
