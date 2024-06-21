@@ -1,8 +1,10 @@
 function toggleMenu() {
     const menu = document.querySelector(".mobile-nav-links");
     const icon = document.querySelector(".mobile-menu-icon");
+    const logo = document.querySelector(".logo");
     menu.classList.toggle("open");
     icon.classList.toggle("open");
+    logo.classList.toggle("open");
 }
 
 const button = document.querySelector('.main-cta');

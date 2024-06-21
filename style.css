@@ -99,7 +99,7 @@ a:hover {
     position: absolute;
     top: 100%;
     right: 0;
-    width: fit-content;
+    width: 100px;
     max-height: 0;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
@@ -108,6 +108,7 @@ a:hover {
     align-items: center;
     gap: 0;
     background-color: rgba(254, 251, 246, 0.1);
+    z-index: 1;
 }
 
 .mobile-nav-links a {

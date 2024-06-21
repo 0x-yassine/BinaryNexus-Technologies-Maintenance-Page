@@ -1,3 +1,10 @@
+:root {
+    --color-black: #212121;
+    --color-black-2: #0c0c0c;
+    --color-white: #fefbf6;
+    --color-green: #9AF48A;
+}
+
 /* NAVIGATION BAR and MAIN SECTION */
 
 @media screen and (max-width: 1200px) {
