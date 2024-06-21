@@ -17,4 +17,4 @@ const contactSection = document.getElementById('contact');
 
 abt_btn.addEventListener('click', () => {
     contactSection.scrollIntoView({ behavior: "smooth" });
-})
+});
