@@ -475,6 +475,9 @@ footer {
 
 .footer-links {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
     list-style: none;
     gap: 8vw;
     font-size: 1rem;
