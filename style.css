@@ -194,6 +194,7 @@ a:hover {
     color: var(--color-black-2);
     background-color: #9AF48A;
     transition: all 0.3s ease;
+    outline: none;
 }
 
 .main-cta:hover {
@@ -263,6 +264,7 @@ a:hover {
     background-color: transparent;
     margin-top: 20px;
     transition: all 0.3s ease;
+    outline: none;
 }
 
 .about-cta:hover {
