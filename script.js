@@ -11,6 +11,14 @@ const button = document.querySelector('.main-cta');
 const aboutSection = document.getElementById('about');
 const servicesSection = document.getElementById('services');
 const contactSection = document.getElementById('contact');
+const form = document.querySelector(".contact-form");
+const emailInput = document.querySelector(".email-input");
+const subjectInput = document.querySelector(".subject-input");
+const msgInput = document.querySelector(".msg-input");
+const submitBtn = document.querySelector(".contact-submit");
+const emailError = document.querySelector(".email-error");
+const subjectError = document.querySelector(".subject-error");
+const msgError = document.querySelector(".msg-error");
 
 button.addEventListener('click', () => {
     aboutSection.scrollIntoView({ behavior: "smooth" });
@@ -38,3 +46,44 @@ window.addEventListener("scroll", function () {
     var mobilenavbar = document.querySelector(".mobile-nav");
     mobilenavbar.classList.toggle("sticky", window.scrollY > 0);
 });
+
+form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    let isValid = true;
+
+    emailInput.classList.remove("error");
+    subjectInput.classList.remove("error");
+    msgInput.classList.remove("error");
+
+    if (emailInput.value.trim() === "") {
+        emailInput.classList.add("error");
+        emailError.classList.add("error");
+        isValid = false;
+    }
+
+    if (subjectInput.value.trim() === "") {
+        subjectInput.classList.add("error");
+        subjectError.classList.add("error");
+        isValid = false;
+    }
+
+    if (msgInput.value.trim() === "") {
+        msgInput.classList.add("error");
+        msgError.classList.add("error");
+        isValid = false;
+    }
+
+    if (isValid) {
+        alert("Thanks for contacting us");
+        this.reset();
+    } else {
+        if (emailInput.classList.contains("error")) {
+            emailInput.focus();
+        } else if (subjectInput.classList.contains("error")) {
+            subjectInput.focus();
+        } else {
+            msgInput.focus();
+        }
+    }
+})
