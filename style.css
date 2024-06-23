@@ -517,6 +517,16 @@ footer {
     color: var(--color-red);
     font-style: italic;
     font-weight: 500;
-    padding: 0 10px 10px 0;
+    padding: 0 0 10px 0;
     display: none;
+}
+
+.email-error.error, .subject-error.error, .msg-error.error {
+    display: block;
+    margin-top: 20px;
+}
+
+.email-input.error, .subject-input.error, .msg-input.error {
+    border-color: var(--color-red);
+    margin-top: 0;
 }

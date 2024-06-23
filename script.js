@@ -55,21 +55,27 @@ form.addEventListener("submit", function (e) {
     emailInput.classList.remove("error");
     subjectInput.classList.remove("error");
     msgInput.classList.remove("error");
+    emailError.classList.remove("error");
+    subjectError.classList.remove("error");
+    msgError.classList.remove("error");
 
     if (emailInput.value.trim() === "") {
         emailInput.classList.add("error");
+        emailError.textContent="Please enter a valid email address";
         emailError.classList.add("error");
         isValid = false;
     }
 
     if (subjectInput.value.trim() === "") {
         subjectInput.classList.add("error");
+        subjectError.textContent="Please enter a subject";
         subjectError.classList.add("error");
         isValid = false;
     }
 
     if (msgInput.value.trim() === "") {
         msgInput.classList.add("error");
+        msgError.textContent="Please type something";
         msgError.classList.add("error");
         isValid = false;
     }
@@ -86,4 +92,4 @@ form.addEventListener("submit", function (e) {
             msgInput.focus();
         }
     }
-})
+});
