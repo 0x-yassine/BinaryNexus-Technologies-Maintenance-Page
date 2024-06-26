@@ -254,6 +254,7 @@ nav.sticky ul li a:hover {
     text-align: center;
     font-size: 4rem;
     font-weight: 700;
+    margin-top: 80px;
 }
 
 .main-services-container {
@@ -335,6 +336,7 @@ nav.sticky ul li a:hover {
     font-size: 4rem;
     font-weight: 700;
     padding-left: 80px;
+    margin-top: 80px;
 }
 
 .main-contact-container {
