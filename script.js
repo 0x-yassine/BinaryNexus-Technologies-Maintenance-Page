@@ -8,7 +8,6 @@ function toggleMenu() {
 }
 
 const button = document.querySelector('.main-cta');
-const aboutSection = document.getElementById('about');
 const servicesSection = document.getElementById('services');
 const contactSection = document.getElementById('contact');
 const form = document.querySelector(".contact-form");
@@ -21,25 +20,12 @@ const subjectError = document.querySelector(".subject-error");
 const msgError = document.querySelector(".msg-error");
 
 button.addEventListener('click', () => {
-    aboutSection.scrollIntoView({ behavior: "smooth" });
-});
-
-const abt_btn = document.querySelector('.about-cta');
-
-abt_btn.addEventListener('click', () => {
-    contactSection.scrollIntoView({ behavior: "smooth" });
+    servicesSection.scrollIntoView({ behavior: "smooth" });
 });
 
 window.addEventListener("scroll", function () {
     var navbar = document.querySelector("nav");
-    //const aboutSectionTop = aboutSection.getBoundingClientRect().top;
-    //const servicesSectionTop = servicesSection.getBoundingClientRect().top;
-    //const contactSectionTop = contactSection.getBoundingClientRect().top;
-    //const isPastServices = window.scrollY > servicesSectionTop;
-    //const isPastContact = window.scrollY > contactSectionTop;
     navbar.classList.toggle("sticky", window.scrollY > 0);
-    //navbar.classList.toggle("black-on-services", isPastServices);
-    //navbar.classList.toggle("white-on-contact", isPastContact);
 });
 
 window.addEventListener("scroll", function () {
@@ -61,21 +47,21 @@ form.addEventListener("submit", function (e) {
 
     if (emailInput.value.trim() === "") {
         emailInput.classList.add("error");
-        emailError.textContent="Please enter a valid email address";
+        emailError.textContent = "Please enter a valid email address";
         emailError.classList.add("error");
         isValid = false;
     }
 
     if (subjectInput.value.trim() === "") {
         subjectInput.classList.add("error");
-        subjectError.textContent="Please enter a subject";
+        subjectError.textContent = "Please enter a subject";
         subjectError.classList.add("error");
         isValid = false;
     }
 
     if (msgInput.value.trim() === "") {
         msgInput.classList.add("error");
-        msgError.textContent="Please type something";
+        msgError.textContent = "Please type something";
         msgError.classList.add("error");
         isValid = false;
     }
