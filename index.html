@@ -114,13 +114,13 @@
             <div class="main-contact-container">
                 <div class="contact-containers">
                     <div class="contact-container form-container">
-                        <form action="#" class="contact-form">
+                        <form action="contactData.php" method="post" class="contact-form" name="contactForm" id="contactForm">
                             <p class="contact-text email-error">Email</p>
-                            <input type="email" class="input-field email-input" placeholder="Email address">
+                            <input type="email" class="input-field email-input" placeholder="Email address" id="emailInput" name="emailInput">
                             <p class="contact-text subject-error">Subject</p>
-                            <input type="text" class="input-field subject-input" placeholder="Subject">
+                            <input type="text" class="input-field subject-input" placeholder="Subject" id="subjectInput" name="subjectInput">
                             <p class="contact-text msg-error">Text</p>
-                            <textarea class="input-field msg-input"></textarea>
+                            <textarea class="input-field msg-input" id="textInput" name="textInput"></textarea>
                             <button type="submit" class="input-field contact-submit">Send</button>
                         </form>
                     </div>
