@@ -67,7 +67,6 @@ form.addEventListener("submit", function (e) {
     }
 
     if (isValid) {
-        alert("Thanks for contacting us");
         this.reset();
     } else {
         if (emailInput.classList.contains("error")) {

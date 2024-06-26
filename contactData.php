@@ -11,7 +11,7 @@ if ($conn->connect_error) {
     $stmt = $conn->prepare("insert into mails(email, subject, text) values(?,?,?)");
     $stmt->bind_param("sss", $email, $subject, $text);
     $stmt->execute();
-    echo "Thanks for contacting us!";
+    echo '<script>alert("Thanks for contacting us!")</script>';
     $stmt->close();
     $conn->close();
 }
