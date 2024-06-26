@@ -1,4 +1,18 @@
 <?php
+$servername = "localhost";
+$user = "root";
+$password = "";
+$db_name = "binarynexus_technologies_mails";;
+
+$conn = new mysqli($servername, $user, $password, $db_name);
+
+if($conn -> error) {
+    die('Connecttion Failed : '.$conn->error);
+} else {
+    echo("Connection Succeeded!");
+}
+
+/*
 $email = $_POST['emailInput'];
 $subject = $_POST['subjectInput'];
 $text = $_POST['textInput'];
@@ -15,3 +29,4 @@ if ($conn->connect_error) {
     $stmt->close();
     $conn->close();
 }
+*/
