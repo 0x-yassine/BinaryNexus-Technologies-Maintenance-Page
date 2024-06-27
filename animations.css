@@ -1,4 +1,6 @@
-.main-title, .main-cta, .main-text {
+.main-title,
+.main-cta,
+.main-text {
     position: relative;
     left: 0;
     opacity: 0;
@@ -21,6 +23,7 @@
         left: -100%;
         opacity: 0;
     }
+
     100% {
         left: 0;
         opacity: 1;
@@ -30,11 +33,38 @@
 /* Webkit (Safari, Chrome) */
 @-webkit-keyframes floatFromRight {
     0% {
-      -webkit-transform: translateX(-100%);
-      opacity: 0;
+        -webkit-transform: translateX(-100%);
+        opacity: 0;
     }
+
     100% {
-      -webkit-transform: translateX(0);
-      opacity: 1;
+        -webkit-transform: translateX(0);
+        opacity: 1;
     }
-  }
+}
+
+/* Mozilla (Firefox) */
+@-moz-keyframes floatFromRight {
+    0% {
+        -moz-transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        -moz-transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Opera */
+@-o-keyframes floatFromRight {
+    0% {
+        -o-transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        -o-transform: translateX(0);
+        opacity: 1;
+    }
+}
