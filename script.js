@@ -67,7 +67,7 @@ form.addEventListener("submit", function (e) {
     }
 
     if (isValid) {
-        this.reset();
+        submitForm();
     } else {
         if (emailInput.classList.contains("error")) {
             emailInput.focus();
@@ -78,3 +78,21 @@ form.addEventListener("submit", function (e) {
         }
     }
 });
+
+function submitForm() {
+    const formData = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open("POST", "contactData.php", true);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+                console.log(xhr.responseText);
+                form.reset();
+            } else {
+                // Handle error
+                console.error("Error:", xhr.status);
+            }
+        }
+    };
+    xhr.send(formData);
+}
