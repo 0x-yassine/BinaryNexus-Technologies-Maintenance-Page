@@ -1,0 +1,40 @@
+.main-title, .main-cta, .main-text {
+    position: relative;
+    left: 0;
+    opacity: 0;
+}
+
+.main-title {
+    animation: floatFromRight 1s ease forwards;
+}
+
+.main-text {
+    animation: floatFromRight 1.5s ease forwards;
+}
+
+.main-cta {
+    animation: floatFromRight 2s ease forwards;
+}
+
+@keyframes floatFromRight {
+    0% {
+        left: -100%;
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+/* Webkit (Safari, Chrome) */
+@-webkit-keyframes floatFromRight {
+    0% {
+      -webkit-transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      opacity: 1;
+    }
+  }
